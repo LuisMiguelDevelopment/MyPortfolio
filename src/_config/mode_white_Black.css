@@ -1,9 +1,11 @@
 #Dark{
-    background-color: #202023;
+    background-color: #202023 !important;
     color: white;
+    height: 100%;
 }
 
 #Light{
-    background-color: #F1F1F9;
+    background-color: #F1F1F9 !important;
     color:#202023;
+    height: 100%;
 }

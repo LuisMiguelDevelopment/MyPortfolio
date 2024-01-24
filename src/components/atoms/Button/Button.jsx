@@ -5,8 +5,10 @@ const Button = ({variant , text , icon}) => {
 
     const buttonClases = classnames('button',{
         buttonGreyGradient : variant === 'buttonGreyGradient',
+        buttonBlackGradient : variant === 'buttonBlackGradient',
         buttonPurple : variant === 'buttonPurple',
         buttonPurpleGradient :variant === 'buttonPurpleGradient',
+        buttonYellowGradient :variant === 'buttonYellowGradient',
         hasIcon: icon
     })
 

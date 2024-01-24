@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css'
 import './_config/mode_white_Black.css'
-import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import { Route, BrowserRouter, Routes , Navigate } from 'react-router-dom';
 import About from './pages/about/About';
 import Services from './pages/services/Services';
 import { useThemeContext } from './context/ThemeContext'
