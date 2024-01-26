@@ -7,6 +7,7 @@ const Button = ({variant , text , icon}) => {
         buttonGreyGradient : variant === 'buttonGreyGradient',
         buttonBlackGradient : variant === 'buttonBlackGradient',
         buttonPurple : variant === 'buttonPurple',
+        buttonPurplelight : variant === 'buttonPurplelight',
         buttonPurpleGradient :variant === 'buttonPurpleGradient',
         buttonYellowGradient :variant === 'buttonYellowGradient',
         hasIcon: icon

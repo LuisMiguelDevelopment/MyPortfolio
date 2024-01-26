@@ -1,0 +1,142 @@
+.infoMe {
+    display: flex;
+    margin-top: 100px;
+}
+
+
+.infoText{
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+   
+}
+
+.infoTextt p {
+    width: 44ch;
+    white-space: nowrap;
+    overflow: hidden; 
+    border-right: 2px solid; 
+    animation: typing 4s steps(44) forwards, blink .5s infinite step-end alternate;
+    margin:  0 50px;
+   
+}
+
+
+
+.text-infoMe {
+    margin-left: 10px;
+}
+
+
+.About {
+    margin-top: 80px;
+}
+
+
+.About-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80px;
+}
+.About-title hr {
+    height: 2px;
+    width: 40px;
+    border: none;
+    border-radius: 15px;
+}
+
+.bio-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+}
+
+.bio-title hr {
+    width: 20px;
+    border-radius: 15px;
+    height: 2px;
+    border: none;
+}
+
+#Dark .About-title hr , #Dark .bio-title hr{
+    background-color: rgb(255, 253, 253);
+}
+
+#Light .About-title hr , .bio-title hr {
+    background-color: black;
+}
+
+.info-about {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.info-about p {
+    text-align: justify;
+}
+
+
+.button-projects{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.Bio{
+    margin-top: 100px;
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 44ch; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+@media screen and (max-width:580px) {
+
+    .infoMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-infoMe img {
+        width: 150px;
+    }
+
+    .text-infoMe h1 {
+        font-size: 3rem;
+    }
+
+    .infoTextt p {
+        margin:  0;
+        font-size: 0.7rem;
+       
+    }
+
+}
+
+
+@media screen and (max-width:400px) {
+
+    .infoMe h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    
+
+    
+    
+
+    
+
+}

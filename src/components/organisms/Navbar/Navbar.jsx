@@ -10,16 +10,8 @@ import { useThemeContext } from '../../../context/ThemeContext'
 
 const Navbar = ({ icon }) => {
 
-  const { contextTheme, setContextTheme } = useThemeContext();
-  const [checked, setChecked] = useState(contextTheme === 'Dark');
-
-  const handleSwitch = () => {
-    const nextTheme = contextTheme === 'Dark' ? 'Light' : 'Dark';
-    setContextTheme(nextTheme);
-    setChecked(nextTheme === 'Dark')
-  }
-
-
+  const { contextTheme , toggleTheme} = useThemeContext();
+  
   useEffect(() => {
     const bar = document.querySelector(".bar");
     const links = document.querySelector(".ul");
@@ -45,7 +37,7 @@ const Navbar = ({ icon }) => {
   return (
     <div className={`navbar ${iconClassNames}`}>
       <div className={`navbar__title `}>
-        {checked ? (
+        {contextTheme == "Dark" ? (
           <Title icon={'totoroWhite'} level={'h3'} text={'Miguel Alvarez'} />
         ) : (
           <Title icon={'totoroBlack'} level={'h3'} text={'Miguel Alvarez'} />
@@ -73,15 +65,15 @@ const Navbar = ({ icon }) => {
         </ul>
       </div>
       <div className="buttons">
-        <div className="navbar__mode" onClick={handleSwitch}>
-          {checked ? (
+        <div className="navbar__mode" onClick={toggleTheme}>
+          {contextTheme == "Dark" ? (
             <Button icon={'sun'} variant={'buttonPurpleGradient'} />
           ) : (
             <Button icon={'moon'} variant={'buttonBlackGradient'} />
           )}
         </div>
         <div className="bar">
-          {checked?(<Button icon={'bar'}variant={'buttonBlackGradient'}/>):(<Button icon={'bar'}variant={'buttonPurpleGradient'}/>)}
+          {contextTheme == "Dark" ? (<Button icon={'bar'}variant={'buttonBlackGradient'}/>):(<Button icon={'bar'}variant={'buttonPurpleGradient'}/>)}
           
         </div>
       </div>

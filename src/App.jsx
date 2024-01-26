@@ -6,6 +6,9 @@ import About from './pages/about/About';
 import Services from './pages/services/Services';
 import { useThemeContext } from './context/ThemeContext'
 import Navbar from './components/organisms/Navbar/Navbar';
+import Banner from './components/organisms/Banner/Banner';
+import DefaultLayout from './components/templates/DefaultLayout';
+
 
 function App() {
 
@@ -17,13 +20,14 @@ function App() {
     <div className="general" id={contextTheme}>
 
       <BrowserRouter>
-      <Navbar/>
+      <DefaultLayout/>
         <div className="central">
           <Routes>
             <Route path='/' element={<About />} />
             <Route path='/Services' element={<Services />} />
           </Routes>
         </div>
+       
       </BrowserRouter>
     </div>
   )

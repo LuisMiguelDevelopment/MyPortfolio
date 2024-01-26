@@ -141,11 +141,12 @@
         margin: 0 10px;
     }
 
-    #Black .ul{
-        background-color: #101011;
+    #Dark ul{
+        background-color: #050505;
+       
     } 
-    #Light .ul{
-        background-color: #F1F1F9
+    #Light ul{
+       background-color: white;    
     } 
 
 }
