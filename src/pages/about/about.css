@@ -40,12 +40,7 @@
     text-decoration-thickness: 4px;
 }
 
-.bio-title {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 10%;
-}
+
 
 .bio-title h3 {
     text-decoration: underline;
