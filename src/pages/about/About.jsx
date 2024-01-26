@@ -5,6 +5,10 @@ import Image from '../../components/atoms/Image/Image'
 import Text from "../../components/atoms/Text/Text"
 import imageProfile from '../../assets/img/Image Profile.png'
 import Button from '../../components/atoms/Button/Button'
+import Datatext from "../../components/atoms/Date-text/Datetext"
+import signWhite from '../../assets/img/FirmarWhite.png'
+import signBlack from '../../assets/img/FirmaBlack.png'
+
 import './about.css';
 const About = () => {
 
@@ -43,6 +47,15 @@ const About = () => {
         <div className="bio-title">
           <Title text={'Bio'} level={'h3'} />
           <hr/>
+        </div>
+        <div className="bio-date">
+            <Datatext subtitle={'2003'} text={'Born in Itagui , Colombia.'} />
+            <Datatext subtitle={'2022'} text={'Beginning of software analysis and development studies in SENA.'} />
+            <Datatext subtitle={'2024 to present'} text={'Internship stage as a software developer (SENA).'} />
+        </div>
+
+        <div className="sign">
+          {contextTheme === "Dark" ? (<Image source={signWhite}/>):(<Image source={signBlack}/>)}
         </div>
         
       </div>

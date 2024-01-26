@@ -11,10 +11,14 @@
 
 .central{
     width: 736px ;
-    height: 2000px;
     margin: 0 auto;
 }
 
+
+.copyright{
+    padding: 50px 0;
+    text-align: center;
+}
 
 
 

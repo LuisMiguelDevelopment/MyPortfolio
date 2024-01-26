@@ -16,7 +16,7 @@
     white-space: nowrap;
     overflow: hidden; 
     border-right: 2px solid; 
-    animation: typing 4s steps(44) forwards, blink .5s infinite step-end alternate;
+    animation: typing 3s steps(44) forwards, blink .5s infinite step-end alternate;
     margin:  0 50px;
    
 }
@@ -90,6 +90,25 @@
     margin-top: 100px;
 }
 
+.bio-date{
+    margin-top: 20px;
+}
+.bio-date p{
+    margin-top: 10px;
+}
+
+.bio-date b{
+    margin-right: 15px;
+}
+
+
+.sign{
+    margin-top: 100px;
+}
+
+
+/*Keyframes*/
+
 
 @keyframes typing {
     from { width: 0; }
@@ -99,6 +118,12 @@
 @keyframes blink {
     50% { border-color: transparent; }
 }
+
+
+/*Keyframes*/
+
+
+/*Meida querys*/
 
 @media screen and (max-width:580px) {
 
@@ -131,12 +156,8 @@
         font-size: 2.5rem;
         text-align: center;
     }
-
-    
-
-    
-    
-
-    
-
 }
+
+
+
+/*Meida querys*/

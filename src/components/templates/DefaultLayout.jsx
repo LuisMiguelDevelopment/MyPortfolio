@@ -1,12 +1,13 @@
 import Navbar from '../organisms/Navbar/Navbar';
 import Banner from '../organisms/Banner/Banner';
-
-const DefaultLayout = () => {
+import Text from '../atoms/Text/Text';
+const DefaultLayout = ({children}) => {
   return (
     <>
-    <Navbar/>
-    <Banner/>
-
+      <Navbar />
+      <Banner />
+      {children}
+      
     </>
   )
 }
