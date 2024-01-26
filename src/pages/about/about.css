@@ -26,6 +26,9 @@
 .text-infoMe {
     margin-left: 10px;
 }
+.text-infoMe h1{
+    font-size: 3rem
+}
 
 
 .About {
