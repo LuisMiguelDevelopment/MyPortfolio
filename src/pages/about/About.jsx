@@ -32,7 +32,7 @@ const About = () => {
       <div className="About">
         <div className="About-title">
           <Title text={'About'} level={'h3'} />
-          <hr />
+          
         </div>
         <div className="info-about">
           <Text text={'Miguel is a web developer in process based in Medellin, he has the ability to capture ideas and translate them into code, he is very creative and very responsible. In his free time he likes to play video games, draw and study.'} />
@@ -46,7 +46,7 @@ const About = () => {
       <div className="Bio">
         <div className="bio-title">
           <Title text={'Bio'} level={'h3'} />
-          <hr/>
+      
         </div>
         <div className="bio-date">
             <Datatext subtitle={'2003'} text={'Born in Itagui , Colombia.'} />

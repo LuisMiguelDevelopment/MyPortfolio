@@ -4,21 +4,21 @@
 }
 
 
-.infoText{
-   display: flex;
-   justify-content: center;
-   margin-top: 100px;
-   
+.infoText {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
 }
 
 .infoTextt p {
     width: 44ch;
     white-space: nowrap;
-    overflow: hidden; 
-    border-right: 2px solid; 
+    overflow: hidden;
+    border-right: 2px solid;
     animation: typing 3s steps(44) forwards, blink .5s infinite step-end alternate;
-    margin:  0 50px;
-   
+    margin: 0 50px;
+
 }
 
 
@@ -33,39 +33,35 @@
 }
 
 
-.About-title {
+
+.About-title h3 {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 4px;
+}
+
+.bio-title {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 80px;
-}
-.About-title hr {
-    height: 2px;
-    width: 40px;
-    border: none;
-    border-radius: 15px;
+    width: 10%;
 }
 
-.bio-title{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 40px;
+.bio-title h3 {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 4px;
+    
 }
 
-.bio-title hr {
-    width: 20px;
-    border-radius: 15px;
-    height: 2px;
-    border: none;
+#Dark .About-title h3,
+#Dark .bio-title h3 {
+    text-decoration-color: white;
 }
 
-#Dark .About-title hr , #Dark .bio-title hr{
-    background-color: rgb(255, 253, 253);
-}
-
-#Light .About-title hr , .bio-title hr {
-    background-color: black;
+#Light .About-title h3,
+.bio-title h3 {
+    text-decoration-color: rgb(0, 0, 0);
 }
 
 .info-about {
@@ -79,30 +75,31 @@
 }
 
 
-.button-projects{
+.button-projects {
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
 
 
-.Bio{
+.Bio {
     margin-top: 100px;
 }
 
-.bio-date{
+.bio-date {
     margin-top: 20px;
 }
-.bio-date p{
+
+.bio-date p {
     margin-top: 10px;
 }
 
-.bio-date b{
+.bio-date b {
     margin-right: 15px;
 }
 
 
-.sign{
+.sign {
     margin-top: 100px;
 }
 
@@ -111,12 +108,19 @@
 
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 44ch; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 44ch;
+    }
 }
 
 @keyframes blink {
-    50% { border-color: transparent; }
+    50% {
+        border-color: transparent;
+    }
 }
 
 
@@ -142,9 +146,9 @@
     }
 
     .infoTextt p {
-        margin:  0;
+        margin: 0;
         font-size: 0.7rem;
-       
+
     }
 
 }
