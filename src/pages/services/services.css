@@ -1,0 +1,13 @@
+.card-services{
+    display: flex;
+    justify-content: space-around;  
+}
+
+
+
+@media screen and (max-width:575px) {
+    .card-services{
+        flex-direction: column;
+        align-items: center;
+    }
+}

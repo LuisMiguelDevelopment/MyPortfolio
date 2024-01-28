@@ -1,0 +1,16 @@
+.card {
+    width: 280px;
+}
+
+.img img{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.content-text h3{
+    text-align: center;
+}
+.content-text p{
+    text-align:justify;
+}
