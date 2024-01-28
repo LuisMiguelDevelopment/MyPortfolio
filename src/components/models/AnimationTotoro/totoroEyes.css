@@ -79,7 +79,7 @@
 
 @media screen and (max-width:600px) {
     .icon_totoro{
-        top: 20px;
+        top: 10px;
     }
     .icon_totoro img{
         transform: rotate(250deg);

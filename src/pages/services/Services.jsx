@@ -16,7 +16,7 @@ const Services = () => {
         <Card image={backEnd} name={'Back End'} description={'Although he is not fully dedicated to the back end, he knows how to create node js cruds and connect it to the front end.'} />
       </div>
       <div className="animation-eyes">
-        <TotoroEyes />
+        <TotoroEyes/>
       </div>
     </div>
   )
