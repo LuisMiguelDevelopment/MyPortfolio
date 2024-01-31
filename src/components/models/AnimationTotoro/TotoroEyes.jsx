@@ -47,6 +47,8 @@ const TotoroEyes = () => {
     const totoroAzul = document.querySelector('.totoroAzul');
     const totoroWhite = document.querySelector('.totoroWhite');
 
+    setTotoroImage(totoroMouth);
+
     anchor.onmouseover = function () {
       totoroAzul.classList.add("funciona");
       totoroWhite.classList.add("white");

@@ -8,6 +8,7 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 const TotoroWhite = () => {
     const [loading, setLoading] = useState(true);
     const mountRef = useRef(null);
+    let model;
 
     useEffect(() => {
         const currentRef = mountRef.current;
@@ -26,7 +27,6 @@ const TotoroWhite = () => {
 
         const orbitControls = new OrbitControls(camera, renderer.domElement);
         orbitControls.enableDamping = true;
-        orbitControls.maxPolarAngle = Math.PI / 2; // Limita la inclinación de la cámara
 
         const resize = () => {
             const { clientWidth, clientHeight } = currentRef;
@@ -46,7 +46,7 @@ const TotoroWhite = () => {
             (gltf) => {
                 console.log('Modelo cargado correctamente', gltf);
 
-                const model = gltf.scene;
+                model = gltf.scene;
                 model.scale.set(0.1, 0.1, 0.1);
                 model.position.set(2, 2, 2);
 
@@ -60,16 +60,13 @@ const TotoroWhite = () => {
                 scene.add(model);
                 setLoading(false);
 
-                // Ajusta la posición de la cámara para enfocar el modelo
                 const boundingBox = new THREE.Box3().setFromObject(model);
                 const center = boundingBox.getCenter(new THREE.Vector3());
                 const size = boundingBox.getSize(new THREE.Vector3());
-
                 const maxSize = Math.max(size.x, size.y, size.z);
                 const fitHeightDistance = maxSize / (2 * Math.atan((Math.PI * camera.fov) / 360));
                 const fitWidthDistance = fitHeightDistance / camera.aspect;
                 const distance = 1.2 * Math.max(fitHeightDistance, fitWidthDistance);
-
                 const direction = orbitControls.target.clone().sub(camera.position).normalize().multiplyScalar(distance);
 
                 orbitControls.maxDistance = distance * 10;
@@ -97,6 +94,11 @@ const TotoroWhite = () => {
         scene.add(directionalLight);
 
         const animate = () => {
+            if (model) {
+                const rotationSpeed = 0.01;
+                model.rotation.y += rotationSpeed;
+            }
+
             orbitControls.update();
             renderer.render(scene, camera);
             requestAnimationFrame(animate);
@@ -111,9 +113,7 @@ const TotoroWhite = () => {
 
     return (
         <div className="screen">
-
             <div className='animacion' ref={mountRef} style={{ width: '300px', height: '300px' }}>
-
             </div>
         </div>
     );

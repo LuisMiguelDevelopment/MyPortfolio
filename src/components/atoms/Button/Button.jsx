@@ -1,7 +1,7 @@
 import './Button.css';
 import classnames from 'classnames';
 import Icon from '../Icons/Icon';
-const Button = ({variant , text , icon}) => {
+const Button = ({variant , text , icon , link}) => {
 
     const buttonClases = classnames('button',{
         buttonGreyGradient : variant === 'buttonGreyGradient',
@@ -14,10 +14,10 @@ const Button = ({variant , text , icon}) => {
     })
 
   return (
-    <button className={buttonClases}>
-        {icon && <Icon className="icono" type={icon}/>}
+    <a href={link} className={buttonClases}  >
+        {icon && <Icon className="icono"  type={icon}/>}
         {text}
-    </button>
+    </a>
   )
 }
 

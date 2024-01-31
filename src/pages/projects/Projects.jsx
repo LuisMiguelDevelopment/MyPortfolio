@@ -1,0 +1,24 @@
+import './projects.css';
+import Title from '../../components/atoms/Title/Title';
+import Card from '../../components/molecules/Card/Card';
+import Licorera from '../../assets/img/Licorerala69.png'
+import Studio from '../../assets/img/StudioGhibli.png'
+import Login from '../../assets/img/LoginMEAN.png'
+
+
+const Projects = () => {
+  return (
+    <div>
+        <div className="text-title__projects">
+        <Title text={'Projects'} level={'h3'} />
+      </div>
+      <div className="card-projects">
+        <Card link={'https://github.com/LuisMiguelDevelopment/LicoreraLa69.git'} image={Licorera} showButton={true} icon={'github'}   name={'Licorera la 69'} description={'Licorera la 69 is a shopping cart web application for a liquor store in itagui antioquia. This was the project done in the SENA.'} />
+        <Card link={'https://github.com/LuisMiguelDevelopment/StudioGhibli.git'} image={Studio} name={'Studio Ghibli'} showButton={true} icon={'github'}  description={'Studio ghibli is a portfolio of images made using flex is a work done for the SENA.'} />
+        <Card link={'https://github.com/LuisMiguelDevelopment/CRUD-18-07-2023.git'} image={Login} name={'Login Mean'} showButton={true} icon={'github'}  description={'Login Mean is a full stack work done with angular and a node js server for SENA.'} />
+      </div>
+    </div>
+  )
+}
+
+export default Projects
