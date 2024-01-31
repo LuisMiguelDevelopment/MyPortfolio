@@ -1,9 +1,9 @@
 import './projects.css';
 import Title from '../../components/atoms/Title/Title';
 import Card from '../../components/molecules/Card/Card';
-import Licorera from '../../assets/img/Licorerala69.png'
-import Studio from '../../assets/img/StudioGhibli.png'
-import Login from '../../assets/img/LoginMEAN.png'
+import Licorera from '../../assets/img/Licorerala69.jpg'
+import Studio from '../../assets/img/StudioGhibli.jpg'
+import Login from '../../assets/img/LoginMEAN.jpg'
 
 
 const Projects = () => {
