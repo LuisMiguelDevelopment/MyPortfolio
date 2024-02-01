@@ -8,6 +8,10 @@ import Button from '../../components/atoms/Button/Button'
 import Datatext from "../../components/atoms/Date-text/Datetext"
 import signWhite from '../../assets/img/FirmarWhite.png'
 import signBlack from '../../assets/img/FirmaBlack.png'
+import Recommendations from '../../components/molecules/Recommendations/Recommendations'
+import Ade from '../../assets/img/ImageAdelaida.png'
+import Yei from '../../assets/img/ImageYeison.png'
+import Seba from '../../assets/img/ImageSebas.png'
 
 import './about.css';
 import { useEffect } from "react"
@@ -67,7 +71,7 @@ const About = () => {
       </div>
 
       <div className="button-projects">
-        {contextTheme === "Dark" ? (<Button text={'Projects'} variant={'buttonGreyGradient'} />) : (<Button text={'Projects'} variant={'buttonPurplelight'} />)}
+        {contextTheme === "Dark" ? (<Button text={'Projects'} variant={'buttonPurpleGradient'} />) : (<Button text={'Projects'} variant={'buttonPurplelight'} />)}
       </div>
 
       <div className="Bio">
@@ -79,6 +83,16 @@ const About = () => {
           <Datatext subtitle={'2003'} text={'Born in Itagui , Colombia.'} />
           <Datatext subtitle={'2022'} text={'Beginning of software analysis and development studies in SENA.'} />
           <Datatext subtitle={'2024 to present'} text={'Internship stage as a software developer (SENA).'} />
+        </div>
+
+        <div className="About-title about-recommendations">
+          <Title text={'Recommendations'} level={'h3'} />
+        </div>
+
+        <div className="recommendations">
+            <Recommendations source={Ade} text={'Adelaida Cano Molina'} level={'h3'} subtitle={'Systems engineer'} subtitle2={'SENA instructor'}/>
+            <Recommendations source={Yei} text={'Yeison Gil Alzate'} level={'h3'} subtitle={'Software development'} subtitle2={'SENA student'}/>
+            <Recommendations source={Seba} text={'Sebastian Vallejo'} level={'h3'} subtitle={'Software development'} subtitle2={'SENA student'}/>
         </div>
 
         <div className="sign">

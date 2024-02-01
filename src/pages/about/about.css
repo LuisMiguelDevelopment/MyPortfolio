@@ -109,6 +109,16 @@
     transform: rotateY(360deg);
 }
 
+.about-recommendations{
+    margin-top: 100px;
+}
+
+.recommendations{
+    display: flex;
+    margin-top: 100px;
+    gap: 15px;
+}
+
 
 /*Keyframes*/
 
@@ -155,6 +165,10 @@
         margin: 0;
         font-size: 0.7rem;
 
+    }
+
+    .recommendations{
+        flex-direction: column;
     }
 
 }

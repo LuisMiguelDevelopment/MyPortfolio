@@ -22,6 +22,7 @@
 
 .button.buttonBlackGradient {
     background: linear-gradient(180deg, #0C0A0F 0%, rgba(227, 229, 217, 0.06) 99.99%, rgba(235, 238, 216, 0.00) 100%);
+
 }
 
 .button.buttonPurple {
@@ -36,7 +37,7 @@
 
 .button.buttonPurpleGradient {
     background: linear-gradient(180deg, #5915EB 0%, rgba(227, 229, 217, 0.06) 99.99%, rgba(235, 238, 216, 0.00) 100%);
-    color: #202023;
+    color: white;
 }
 
 
