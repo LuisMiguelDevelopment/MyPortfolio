@@ -76,8 +76,9 @@
 .button-projects {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 100px; 
 }
+
 
 
 .Bio {

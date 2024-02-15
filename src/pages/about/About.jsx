@@ -15,6 +15,7 @@ import Seba from '../../assets/img/ImageSebas.png'
 
 import './about.css';
 import { useEffect } from "react"
+import { Link } from "react-router-dom"
 const About = () => {
 
   const { contextTheme } = useThemeContext();
@@ -28,7 +29,7 @@ const About = () => {
       inputs.forEach((input) => {
         if (input.isIntersecting) {
           input.target.classList.add('visible');
-          
+
         } else {
           input.target.classList.remove('visible')
         }
@@ -43,7 +44,7 @@ const About = () => {
     })
 
     observer.observe(animationImage);
-    
+
   })
 
 
@@ -54,7 +55,7 @@ const About = () => {
       </div>
       <div className="infoMe">
         <div className="image-infoMe" id="imgProfile">
-          <Image source={imageProfile}  />
+          <Image source={imageProfile} />
         </div>
         <div className="text-infoMe">
           <Title text={'Miguel Alvarez'} level={'h1'} subtitle={'Software analysis and development student (SENA)'} />
@@ -70,9 +71,11 @@ const About = () => {
         </div>
       </div>
 
-      <div className="button-projects">
-        {contextTheme === "Dark" ? (<Button text={'Projects'} variant={'buttonPurpleGradient'} />) : (<Button text={'Projects'} variant={'buttonPurplelight'} />)}
-      </div>
+      <Link to={'/Projects'}>
+        <div className="button-projects">
+          {contextTheme === "Dark" ? (<Button  text={'Projects'} variant={'buttonPurpleGradient'} />) : (<Button text={'Projects'} variant={'buttonPurplelight'} />)}
+        </div>
+      </Link>
 
       <div className="Bio">
         <div className="bio-title">
@@ -90,9 +93,9 @@ const About = () => {
         </div>
 
         <div className="recommendations">
-            <Recommendations source={Ade} text={'Adelaida Cano Molina'} level={'h3'} subtitle={'Systems engineer'} subtitle2={'SENA instructor'}/>
-            <Recommendations source={Yei} text={'Yeison Gil Alzate'} level={'h3'} subtitle={'Software development'} subtitle2={'SENA student'}/>
-            <Recommendations source={Seba} text={'Sebastian Vallejo'} level={'h3'} subtitle={'Software development'} subtitle2={'SENA student'}/>
+          <Recommendations source={Ade} text={'Adelaida Cano Molina'} level={'h3'} subtitle={'Systems engineer'} subtitle2={'SENA instructor'} />
+          <Recommendations source={Yei} text={'Yeison Gil Alzate'} level={'h3'} subtitle={'Software development'} subtitle2={'SENA student'} />
+          <Recommendations source={Seba} text={'Sebastian Vallejo'} level={'h3'} subtitle={'Software development'} subtitle2={'SENA student'} />
         </div>
 
         <div className="sign">

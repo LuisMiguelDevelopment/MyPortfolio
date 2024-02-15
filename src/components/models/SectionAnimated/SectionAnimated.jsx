@@ -4,6 +4,8 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
+import totoroLoading from '../../../assets/img/TotoroMovimiento.gif'
+
 
 const SectionAnimated = () => {
 
@@ -18,7 +20,7 @@ const SectionAnimated = () => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(25, width / height, 0.2, 100);
     scene.add(camera);
-    camera.position.set(2.7, 1, 2.2);
+    camera.position.set(3.5, 1, 1.5);
     camera.lookAt(new THREE.Vector3());
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -53,7 +55,7 @@ const SectionAnimated = () => {
         
         // Ajusta la escala y posición del modelo
         gltf.scene.scale.set(0.1, 0.1, 0.1);
-        gltf.scene.position.set(1, 0.1, 0.1);
+        gltf.scene.position.set(0.5, -0.3, 0.2);
         
         // Habilita sombras para cada malla del modelo
         gltf.scene.traverse((child) => {
@@ -97,8 +99,11 @@ const SectionAnimated = () => {
   }, []);
 
   return (
-    <div className='animacion' ref={mountRef} style={{ width: '50%', height: '500px' }}>
-      {loading && <div className='loading-screnn'>Loading....</div> }
+    <div className='animacion' ref={mountRef} style={{ width: '100%', height: '500px' }}>
+      {loading && <div className='loading-screnn'>
+        <img src={totoroLoading} alt="" />
+        Loading
+        </div> }
     </div>
   );
 };

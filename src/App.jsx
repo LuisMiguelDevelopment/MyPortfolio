@@ -8,6 +8,7 @@ import Projects from './pages/projects/Projects';
 import { useThemeContext } from './context/ThemeContext'
 import DefaultLayout from './components/templates/DefaultLayout';
 import Text from './components/atoms/Text/Text';
+import Knowledge from './pages/knowledge/Knowledge';
 
 function App() {
 
@@ -17,7 +18,6 @@ function App() {
 
   return (
     <div className="general" id={contextTheme}>
-
       <BrowserRouter>
         <DefaultLayout />
         <div className="central">
@@ -25,12 +25,15 @@ function App() {
             <Route path='/' element={<About />} />
             <Route path='/Services' element={<Services />} />
             <Route path='/Projects' element={<Projects />} />
+            <Route path='/Knowledge' element={<Knowledge />} />
           </Routes>
         </div>
         <div className="copyright">
           <Text text={'Miguel Alvarez © 2024'} />
         </div>
       </BrowserRouter>
+
+
     </div>
   )
 }
