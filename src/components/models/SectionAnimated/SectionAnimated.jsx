@@ -49,7 +49,7 @@ const SectionAnimated = () => {
     const gltfLoader = new GLTFLoader();
     gltfLoader.setDRACOLoader(dracoLoader)
     gltfLoader.load(
-      './models/HouseTatami/CASAMODEL.gltf', // Ajusta la ruta al modelo
+      './models/HouseTatami/casita.gltf', // Ajusta la ruta al modelo
       (gltf) => {
         console.log('Modelo cargado correctamente', gltf);
         
