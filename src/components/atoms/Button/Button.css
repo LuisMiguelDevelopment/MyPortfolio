@@ -10,9 +10,7 @@
 
 
 
-.button:hover {
-    opacity: 0.8;
-}
+
 
 
 .button.buttonGreyGradient {
@@ -30,13 +28,26 @@
     color: white;
 }
 
+.button.buttonPurple2 {
+    background-color: #c69ef7;
+    color: white;
+}
+.button.buttonPurple2:hover {
+    background-color: #af75f7;
+    color: white;
+}
+
 .button.buttonPurplelight {
     background: linear-gradient(180deg, #3737DA 0.01%, rgba(55, 55, 218, 0.24) 0.02%, rgba(55, 55, 218, 0.13) 0.03%);
     color: #202023;
 }
 
 .button.buttonPurpleGradient {
-    background: linear-gradient(180deg, #5915EB 0%, rgba(227, 229, 217, 0.06) 99.99%, rgba(235, 238, 216, 0.00) 100%);
+    background: linear-gradient(180deg, #5915EB 0%, rgb(25, 26, 24) 99.99%, rgba(235, 238, 216, 0.00) 100%);
+    color: white;
+}
+.button.buttonPurpleGradient:hover {
+    background: linear-gradient(180deg, #5915EB 0%, rgb(179, 190, 168) 99.99%, rgba(235, 238, 216, 0.00) 100%);
     color: white;
 }
 

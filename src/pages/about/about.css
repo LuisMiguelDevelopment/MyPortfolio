@@ -78,8 +78,26 @@
     display: flex;
     justify-content: center;
     margin-top: 100px; 
+    position: relative;
+}
+.button-projects  a{
+   z-index: 2;
 }
 
+
+.button-projects img{
+    width: 80px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0px);
+    transition: 0.7s ease-in-out all;
+}
+.button-projects img.up{
+    transform: translateY(-59px);
+}
 
 
 .Bio {
