@@ -13,14 +13,14 @@ const Knowledge = () => {
   const { contextTheme } = useThemeContext();
 
   return (
-    <Layout className="Knowledge_general">
+    <div className="Knowledge_general">
       <Title level={'h3'} text={'Knowledge'} />
       <div className='knowledge'>
         <SectionAnimated />
         {contextTheme === 'Dark' ? (<Image source={mouseWhite} />) : (<Image source={mouseBlack} />)}
 
       </div>
-    </Layout>
+    </div>
   )
 }
 
