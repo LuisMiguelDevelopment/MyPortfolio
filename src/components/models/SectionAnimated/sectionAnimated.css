@@ -16,6 +16,9 @@
   width: 200px;
 }
 
+.animacion{
+  z-index: 100;
+}
 
 
 #Dark .loading-screnn {

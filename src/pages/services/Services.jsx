@@ -4,10 +4,10 @@ import Card from '../../components/molecules/Card/Card';
 import frontEnd from '../../assets/img/ServicesFrontEnd.png'
 import backEnd from '../../assets/img/ServicesBackEnd.png'
 import TotoroEyes from '../../components/models/AnimationTotoro/TotoroEyes';
-
+import Layout from "../../_config/Layout"
 const Services = () => {
   return (
-    <div className='cardd'>
+    <Layout className='cardd'>
       <div className="text-title__services">
         <Title text={'Services'} level={'h3'} />
       </div>
@@ -18,7 +18,7 @@ const Services = () => {
       <div className="animation-eyes">
         <TotoroEyes/>
       </div>
-    </div>
+    </Layout>
   )
 }
 

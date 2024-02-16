@@ -1,5 +1,6 @@
 import Title from "../../components/atoms/Title/Title"
 import InfoText from "../../components/atoms/InfoText/InfoText"
+import Layout from "../../_config/Layout"
 import { useThemeContext } from '../../context/ThemeContext'
 import Image from '../../components/atoms/Image/Image'
 import Text from "../../components/atoms/Text/Text"
@@ -49,7 +50,7 @@ const About = () => {
 
 
   return (
-    <div className="" >
+    <Layout className="about" >
       <div className="infoTextt">
         {contextTheme === 'Dark' ? (<InfoText text={abouText} variant={'infoTextBlack'} />) : (<InfoText text={abouText} variant={'infoTextPurple'} />)}
       </div>
@@ -104,7 +105,7 @@ const About = () => {
 
       </div>
 
-    </div>
+    </Layout>
   )
 }
 

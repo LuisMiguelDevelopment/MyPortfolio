@@ -4,11 +4,12 @@ import Card from '../../components/molecules/Card/Card';
 import Licorera from '../../assets/img/Licorerala69.jpg'
 import Studio from '../../assets/img/StudioGhibli.jpg'
 import Login from '../../assets/img/LoginMEAN.jpg'
+import Layout from "../../_config/Layout"
 
 
 const Projects = () => {
   return (
-    <div>
+    <Layout>
         <div className="text-title__projects">
         <Title text={'Projects'} level={'h3'} />
       </div>
@@ -17,7 +18,7 @@ const Projects = () => {
         <Card link={'https://github.com/LuisMiguelDevelopment/StudioGhibli.git'} image={Studio} name={'Studio Ghibli'} showButton={true} icon={'github'}  description={'Studio ghibli is a portfolio of images made using flex is a work done for the SENA.'} />
         <Card link={'https://github.com/LuisMiguelDevelopment/CRUD-18-07-2023.git'} image={Login} name={'Login Mean'} showButton={true} icon={'github'}  description={'Login Mean is a full stack work done with angular and a node js server for SENA.'} />
       </div>
-    </div>
+    </Layout>
   )
 }
 
