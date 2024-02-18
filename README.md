@@ -11,4 +11,15 @@ https://miguelalvarezdev.netlify.app/
   <li> <a href="https://www.framer.com/motion/" >Framer Motion</a> - An animation library for React </li>
 </ul>
 
+<hr/>
+
+<h2>Installation</h2>
+
+<ul>
+  <li> npm install </li>
+  <li> npm run dev </li>
+</ul>
+
+<h1>Thanks</h1>
+
 
