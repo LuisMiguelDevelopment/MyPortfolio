@@ -12,8 +12,8 @@ const Services = () => {
         <Title text={'Services'} level={'h3'} />
       </div>
       <div className="card-services">
-        <Card image={frontEnd} name={'Front End'} description={'Passionate about front-end development, he enjoys transforming creative designs into interactive and functional experiences.'} />
-        <Card image={backEnd} name={'Back End'} description={'Although he is not fully dedicated to the back end, he knows how to create node js cruds and connect it to the front end.'} />
+        <Card image={frontEnd} alt={'image-frontend'} name={'Front End'} description={'Passionate about front-end development, he enjoys transforming creative designs into interactive and functional experiences.'} />
+        <Card image={backEnd} alt={'image-backend'} name={'Back End'} description={'Although he is not fully dedicated to the back end, he knows how to create node js cruds and connect it to the front end.'} />
       </div>
       <div className="animation-eyes">
         <TotoroEyes/>

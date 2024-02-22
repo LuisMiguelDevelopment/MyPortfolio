@@ -44,7 +44,7 @@ const About = () => {
       </div>
       <div className="infoMe">
         <div className="image-infoMe" id="imgProfile">
-          <Image source={imageProfile} />
+          <Image source={imageProfile} altText={'profileImage'} />
         </div>
         <div className="text-infoMe">
           <Title text={'Miguel Alvarez'} level={'h1'} subtitle={'Software analysis and development student (SENA)'} />
@@ -59,7 +59,7 @@ const About = () => {
         </div>
       </div>
       <div className="button-projects" >
-        <Image source={totoro} className={"totoroUp"} />
+        <Image source={totoro} className={"totoroUp"} altText={'totoro'} />
         {contextTheme === "Dark" ? (<Button id={"totoroBottom"} link={`mailto:${mail}`} text={'Contact me'} variant={'buttonPurpleGradient'} />) : (<Button id={"totoroBottom"}  link={`mailto:${mail}`} text={'Contact me'} variant={'buttonPurple2'} />)}
       </div>
       <div className="Bio">
@@ -75,9 +75,9 @@ const About = () => {
           <Title text={'Recommendations'} level={'h3'} />
         </div>
         <div className="recommendations">
-          <Recommendations source={Ade} text={'Adelaida Cano Molina'} level={'h3'} subtitle={'Systems engineer'} subtitle2={'SENA instructor'} />
-          <Recommendations source={Yei} text={'Yeison Gil Alzate'} level={'h3'} subtitle={'Software development'} subtitle2={'SENA student'} />
-          <Recommendations source={Seba} text={'Sebastian Vallejo'} level={'h3'} subtitle={'Software development'} subtitle2={'SENA student'} />
+          <Recommendations source={Ade} altText={'image-ade'} text={'Adelaida Cano Molina'} level={'h3'} subtitle={'Systems engineer'} subtitle2={'SENA instructor'} />
+          <Recommendations source={Yei} altText={'image-yei'} text={'Yeison Gil Alzate'} level={'h3'} subtitle={'Software development'} subtitle2={'SENA student'} />
+          <Recommendations source={Seba} altText={'image-seba'}  text={'Sebastian Vallejo'} level={'h3'} subtitle={'Software development'} subtitle2={'SENA student'} />
         </div>
         <div className="sign">
           {contextTheme === "Dark" ? (<Image source={signWhite} />) : (<Image source={signBlack} />)}

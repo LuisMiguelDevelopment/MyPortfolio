@@ -37,7 +37,7 @@ const Banner = ({ image, icon }) => {
     <div className={bannerClassNames}>
       <div className="img__banner" >
         <div className="img-ani">
-          {isTotoroVisible ? (<img src={totoroMovimiento} />) : (<TotoroWhite className="animacion" />)}
+          {isTotoroVisible ? (<img src={totoroMovimiento} alt='totoromov' />) : (<TotoroWhite className="animacion" />)}
         </div>
         <div className={iconClassNames} onClick={handleClick} >
           <Title level={'h3'} text={'Click here!'} />
