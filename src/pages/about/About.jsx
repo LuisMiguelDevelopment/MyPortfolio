@@ -80,7 +80,7 @@ const About = () => {
           <Recommendations source={Seba} altText={'image-seba'}  text={'Sebastian Vallejo'} level={'h3'} subtitle={'Software development'} subtitle2={'SENA student'} />
         </div>
         <div className="sign">
-          {contextTheme === "Dark" ? (<Image source={signWhite} />) : (<Image source={signBlack} />)}
+          {contextTheme === "Dark" ? (<Image source={signWhite} />) : (<Image source={signBlack} altText={'sign'} />)}
         </div>
       </div>
     </Layout>
