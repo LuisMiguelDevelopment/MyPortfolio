@@ -16,6 +16,11 @@
    border-radius: 15px;
 }
 
+
+.text-title__participation{
+    margin-top: 50px;
+}
+
 @media screen and (max-width:642px) {
     .card-projects{
         justify-content: center;
