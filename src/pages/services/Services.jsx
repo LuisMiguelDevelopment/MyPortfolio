@@ -13,7 +13,7 @@ const Services = () => {
       </div>
       <div className="card-services">
         <Card image={frontEnd} alt={'image-frontend'} name={'Front End'} description={'Passionate about front-end development, he enjoys transforming creative designs into interactive and functional experiences.'} />
-        <Card image={backEnd} alt={'image-backend'} name={'Back End'} description={'Although he is not fully dedicated to the back end, he knows how to create node js cruds and connect it to the front end.'} />
+        <Card image={backEnd} alt={'image-backend'} name={'Back End'} description={'Throughout his learning and projects he knows how to work with cruds, websockets, database connections, tokens, cookies and password encryption.'} />
       </div>
       <div className="animation-eyes">
         <TotoroEyes/>
