@@ -6,7 +6,7 @@ import Title from '../../atoms/Title/Title';
 import Button from '../../atoms/Button/Button';
 
 
-const Card = ({ image, alt, name, description, level, showButton , text , icon , link}) => {
+const Card = ({ image, alt, name, description, level, showButton , text , icon , link, colorButton}) => {
 
     const cardClassNames = classnames('card', {
         hasImage: image
@@ -18,7 +18,7 @@ const Card = ({ image, alt, name, description, level, showButton , text , icon ,
                 {image && <Image source={image} altText={alt} />}
                 {showButton && (
                     <div className="button__card">
-                        <Button text={text} icon={icon} variant={'buttonPurple'} link={link}/>
+                        <Button text={text} icon={icon} variant={colorButton} link={link}/>
                     </div>
                 )}
             </div>
