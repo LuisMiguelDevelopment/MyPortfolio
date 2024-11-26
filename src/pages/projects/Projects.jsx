@@ -6,6 +6,7 @@ import VisionWeb from "../../assets/img/VISIONWEB.png";
 import MyPortfolio from "../../assets/img/MyPortfolio.png";
 import PracticasCtm from "../../assets/img/PRACTICASCTM.png";
 import StreamingCol from "../../assets/img/streamingCol.png";
+import scriptCraftHost from "../../assets/img/scriptCraftHost.png";
 import Layout from "../../_config/Layout";
 
 const Projects = () => {
@@ -15,6 +16,18 @@ const Projects = () => {
         <Title text={"Projects"} level={"h3"} />
       </div>
       <div className="card-projects">
+        <Card
+          link={"https://script-craft-host.vercel.app/"}
+          image={scriptCraftHost}
+          alt={"image"}
+          name={"ScriptCraftHost"}
+          showButton={true}
+          icon={"link"}
+          colorButton={"buttonPurple"}
+          description={
+            "Technologies used: Next.js with Chakra UI, Node.js backend, and MySQL database. Integrated Docker for containerized server management, SSH2 for secure connections, and Socket.io for real-time updates."
+          }
+        />
         <Card
           link={"https://www.streamingcol.online"}
           image={StreamingCol}
